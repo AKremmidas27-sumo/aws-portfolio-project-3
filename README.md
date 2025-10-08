@@ -1,4 +1,5 @@
-### aws-portfolio-project-3
+### AWS PORTFOLIO 3 PROJECT 
+
 Secure Image Uploads with Pre-Signed URLs (AWS SAM)
 
 This project demonstrates a (secure, serverless image upload flow) using AWS API Gateway, Lambda, and S3 — with optional CloudFront CDN + Origin Access Control (OAC) and automatic thumbnail generation.
