@@ -11,4 +11,24 @@ Features
 - CORS enabled** for front-end integration
 - Infrastructure as Code via AWS SAM
 
+API=https://nvdopp01vj.execute-api.us-east-2.amazonaws.com/Prod
+
+# Test Commands
+1) Request presigned URL
+curl -s "$API/generateUploadUrl?ext=jpg&contentType=image/jpeg" | tee /tmp/url.json
+
+2) Extract values
+UPLOAD_URL=$(jq -r .uploadUrl /tmp/url.json)
+KEY=$(jq -r .key /tmp/url.json)
+
+3) Upload a test file
+echo "hello image" > /tmp/test.jpg
+curl -i -X PUT -H "Content-Type: image/jpeg" --data-binary "@/tmp/test.jpg" "$UPLOAD_URL"
+
+4) Verify in S3
+aws s3api head-object \
+  --region us-east-2 \
+  --bucket image-upload-stack-uploadbucket-h5xocqhpmpno \
+  --key "$KEY" \
+  --query "{Key:Key,Size:ContentLength,ContentType:ContentType,ETag:ETag}"
 
