@@ -32,3 +32,33 @@ aws s3api head-object \
   --key "$KEY" \
   --query "{Key:Key,Size:ContentLength,ContentType:ContentType,ETag:ETag}"
 
+
+# LAMBDA SUMMARIZATION EFFORTS
+import json, os, uuid, boto3
+from botocore.config import Config
+from urllib.parse import urlparse, urlunparse
+
+BUCKET = os.environ["BUCKET_NAME"]
+REGION = os.environ.get("AWS_REGION", "us-east-2")
+EXPIRES = 3600
+
+s3 = boto3.client("s3", region_name=REGION)
+def lambda_handler(event, context):
+    key = f"uploads/{uuid.uuid4()}.jpg"
+    url = s3.generate_presigned_url(
+        "put_object",
+        Params={"Bucket": BUCKET, "Key": key, "ContentType": "image/jpeg"},
+        ExpiresIn=EXPIRES,
+    )
+    # Force regional host to avoid 307 redirects
+    p = urlparse(url)
+    if p.hostname and p.hostname.endswith("s3.amazonaws.com"):
+        bucket = p.hostname.split(".")[0]
+        new_host = f"{bucket}.s3.{REGION}.amazonaws.com"
+        p = p._replace(netloc=new_host)
+        url = urlunparse(p)
+    return {
+        "statusCode": 200,
+        "headers": {"Access-Control-Allow-Origin": "*"},
+        "body": json.dumps({"uploadUrl": url, "key": key, "expiresIn": EXPIRES})
+    }
