@@ -14,7 +14,7 @@ Features
 
 ## AWS CLI SETUP
 
-# 0) Variables
+# Variables
 REGION=us-east-2
 ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 PKG_BUCKET=andrew-sam-artifacts-$ACCOUNT_ID-$REGION
