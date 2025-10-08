@@ -11,6 +11,31 @@ Features
 - CORS enabled** for front-end integration
 - Infrastructure as Code via AWS SAM
 
+## AWS CLI SETUP
+
+# 0) Variables
+REGION=us-east-2
+ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+PKG_BUCKET=andrew-sam-artifacts-$ACCOUNT_ID-$REGION
+
+# 1) Initialize SAM project
+sam init --name aws-portfolio-project-3 --runtime python3.12 --app-template hello-world
+
+# 2) Update runtime and add Lambda source (src/app.py)
+
+# 3) Build and package
+sam build --use-container
+sam package --template-file template.yaml \
+  --s3-bucket "$PKG_BUCKET" \
+  --output-template-file packaged.yaml
+
+# 4) Deploy
+sam deploy \
+  --template-file packaged.yaml \
+  --stack-name image-upload-stack \
+  --region $REGION \
+  --capabilities CAPABILITY_IAM
+
 API=https://nvdopp01vj.execute-api.us-east-2.amazonaws.com/Prod
 
 # Test Commands
@@ -31,6 +56,8 @@ aws s3api head-object \
   --bucket image-upload-stack-uploadbucket-h5xocqhpmpno \
   --key "$KEY" \
   --query "{Key:Key,Size:ContentLength,ContentType:ContentType,ETag:ETag}"
+
+   
 
 
 # LAMBDA SUMMARIZATION EFFORTS
