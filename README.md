@@ -91,44 +91,42 @@ def lambda_handler(event, context):
         "body": json.dumps({"uploadUrl": url, "key": key, "expiresIn": EXPIRES})
     }
 
-    [IMG_2933.pdf](https://github.com/user-[IMG_2935.pdf](https://github.com/user-attachments/files/23281710/IMG_2935.pdf)
+  
+  ![IMG_2933](https://github.com/user-attachments/assets/2c149e44-dfa8-4133-8c26-495bb08b85b6)
 
-    [IMG_2935.pdf](https://github.com/user-attachments/files/23281739/IMG_2935.pdf)
-    
-    [IMG_2938.pdf](https://github.com/user-attachments/files/23281756/IMG_2938.pdf)
+  ![IMG_2935](https://github.com/user-attachments/assets/8ae966eb-23d1-4fe4-861f-616f3d32e2dc)
 
-    [IMG_2941.pdf](https://github.com/user-attachments/files/23281762/IMG_2941.pdf)
+  ![IMG_2937](https://github.com/user-attachments/assets/63802f20-9c6a-4a68-bd6e-5a195728295e)
 
-    [IMG_2942.pdf](https://github.com/user-attachments/files/23281763/IMG_2942.pdf)
-    
-    [IMG_2943.pdf](https://github.com/user-attachments/files/23281764/IMG_2943.pdf)
+  ![IMG_2938](https://github.com/user-attachments/assets/dd4f7088-7b6a-43af-9c10-6addd9376d16)
 
-    [IMG_2944.pdf](https://github.com/user-attachments/files/23281765/IMG_2944.pdf)
+  ![IMG_2941](https://github.com/user-attachments/assets/54fe60c0-e1b1-4861-beab-e79f2e6a74a7)
 
-    [IMG_2946.pdf](https://github.com/user-attachments/files/23281768/IMG_2946.pdf)
-    
-    [IMG_2948.pdf](https://github.com/user-attachments/files/23281769/IMG_2948.pdf)
+  ![IMG_2942](https://github.com/user-attachments/assets/afb63813-36b4-473f-9f85-8790fc3ea024)
 
-    [IMG_2949.pdf](https://github.com/user-attachments/files/23281771/IMG_2949.pdf)
+  ![IMG_2944](https://github.com/user-attachments/assets/688ea492-c246-419b-8826-ca08fcdbcfca)
 
-    [IMG_2950.pdf](https://github.com/user-attachments/files/23281772/IMG_2950.pdf)
+  ![IMG_2944](https://github.com/user-attachments/assets/8ba09406-9f99-4bc5-86dd-c874bb25fe2f)
 
-    [IMG_2952.pdf](https://github.com/user-attachments/files/23281774/IMG_2952.pdf)
+  ![IMG_2945](https://github.com/user-attachments/assets/20802996-4d10-4941-9552-2a3a2bf407fe)
 
-    [IMG_2957.pdf](https://github.com/user-attachments/files/23281775/IMG_2957.pdf)
-    
-    [IMG_2970.pdf](https://github.com/user-attachments/files/23281788/IMG_2970.pdf)
+  ![IMG_2946](https://github.com/user-attachments/assets/7d88bee2-9ee0-4676-b7e3-2dc4f9215246)
 
-    [IMG_2972.pdf](https://github.com/user-attachments/files/23281789/IMG_2972.pdf)
-    
-    [IMG_2981.pdf](https://github.com/user-attachments/files/23281791/IMG_2981.pdf)
-    
-    [IMG_2993.pdf](https://github.com/user-attachments/files/23281793/IMG_2993.pdf)
+  ![IMG_2948](https://github.com/user-attachments/assets/2fa4da09-8840-4156-8e89-0cb10f7d68d7)
 
-    [IMG_2998.pdf](https://github.com/user-attachments/files/23281801/IMG_2998.pdf)
-    
-    [IMG_2999.pdf](https://github.com/user-attachments/files/23281802/IMG_2999.pdf)
+  ![IMG_2949](https://github.com/user-attachments/assets/a12ce8de-6483-4c57-aa61-fd39e54a920c)
 
-    
+  ![IMG_2950](https://github.com/user-attachments/assets/6c0425bd-8fc7-4fca-97a4-eb5034f0636c)
 
-    
+  ![IMG_2957](https://github.com/user-attachments/assets/e2f261d1-baad-491e-bdcf-57b5961ad5cc)
+  
+  ![IMG_2970](https://github.com/user-attachments/assets/6f46eef2-e8ae-4717-9f72-58430ae9194c)
+
+  ![IMG_2972](https://github.com/user-attachments/assets/e9cfedbc-39f3-45fd-90a9-59e3524a8a92)
+
+  ![IMG_2998](https://github.com/user-attachments/assets/bf8331fc-0ef9-4199-83ab-bce298935cfe)
+
+  ![IMG_2999](https://github.com/user-attachments/assets/f2cb6c96-9b32-46e7-bd78-02c5d1767107)
+
+
+   
