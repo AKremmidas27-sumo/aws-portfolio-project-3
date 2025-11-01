@@ -116,8 +116,6 @@ def lambda_handler(event, context):
 
   ![IMG_2949](https://github.com/user-attachments/assets/d0a05093-d3c8-498e-a636-79a848185797)
 
-  ![IMG_2951](https://github.com/user-attachments/assets/1f504c23-4562-4c71-a34d-d8beca472bae)
-
   ![IMG_2957](https://github.com/user-attachments/assets/e2f261d1-baad-491e-bdcf-57b5961ad5cc)
   
   ![IMG_2970](https://github.com/user-attachments/assets/6f46eef2-e8ae-4717-9f72-58430ae9194c)
